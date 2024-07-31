@@ -79,7 +79,8 @@ class HintSystem extends React.Component {
         } 
     }
 
-    unlockHint = (event, expanded, i) => {
+    // unlockHint = (event, expanded, i) => {
+    unlockHint = async (event, expanded, i) => {
         // Verona calls here
         if (this.state.currentExpanded === i) {
             this.setState({ currentExpanded: -1 });
@@ -88,6 +89,17 @@ class HintSystem extends React.Component {
             if (expanded && i < this.props.hintStatus.length) {
                 this.props.unlockHint(i, this.props.hints[i].type);
             }
+
+            // Verona's added code to request Furhat to speak
+            const hintText = this.props.hints[i].speech; // should be .text or .speech?
+            try {
+                const furhatResponse = await askFurhat(hintText);
+                console.log('Furhat response:', furhatResponse);
+                console.log('Hint sent to Furhat successfully.');
+            } catch (error) {
+                console.error('Failed to send hint to Furhat. Error:', error);
+            }
+
             this.setState({ latestStep: i });
         }
     };
