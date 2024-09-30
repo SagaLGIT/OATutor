@@ -28,12 +28,14 @@ import io from 'socket.io-client';
 const socket = io('http://localhost:3000'); 
 
 const Item = styled(Paper)(({ theme, show_boarder }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+//   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  backgroundColor: show_boarder === 'true' ? 'yellow' : '#fff',
   ...theme.typography.body2,
   padding: theme.spacing(1),
   textAlign: 'center',
   color: theme.palette.text.primary,
-  border: show_boarder === "true"? '1px solid black': 'none',
+  border: show_boarder === "true"? '3px solid yellow': 'none',
+  
 }));
 // HELLO
 
@@ -170,6 +172,7 @@ class HintSystem extends React.Component {
 
     // Sagas added methods
     nextBoarder = (hint) => {
+        // not in use
         // will run after agent speaks their hint[i]
         if (hint.math !== undefined){
             if (hint.math.length -1 > this.state.hintIndex) {
@@ -217,12 +220,11 @@ class HintSystem extends React.Component {
         };               
         socket.on('message', (data) => {
             // console.log('Message from server:', data);
-            this.setState({hintIndex: parseInt(data)}); // later make method with some error catching
+            this.setState({hintIndex: parseInt(data)}); // later make function with some error handeling
         });
 
-         // dont know if this should be placed here
+         // dont know if this should be placed here but it works
          socket.on('finish', () => {
-            // console.log('Finished hint');
             this.setState({playing: false});
         });
 
@@ -243,11 +245,12 @@ class HintSystem extends React.Component {
     toggleWhiteboard = (hint) => {
         this.setState( prevState => ({ agentMode: !prevState.agentMode }),
         () => {
+          // ADD: stopSpeech() if talking and event: angentMode off
           this.playAgent(hint); 
         })
 
         // should play when whiteboard opens and stop when closes
-
+        
     };
 
     togglePlayPause = (event) => {
@@ -268,6 +271,7 @@ class HintSystem extends React.Component {
             this.playAgent(hint);
         }
         // else {
+        //     console.log("frontend: stopSpeach")
         //     this.stopSpeech();
         // }
        
