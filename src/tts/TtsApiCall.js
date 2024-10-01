@@ -1,6 +1,5 @@
 const axios = require('axios');
-require('dotenv').config();
-
+// import axios  from 'axios'; // when using in react
 
 async function retrieveTts(text) {
     const inputVoice = "alloy"; // https://platform.openai.com/docs/guides/text-to-speech/voice-options
@@ -17,13 +16,17 @@ async function retrieveTts(text) {
     const headers = {
         Authorization: `Bearer ${apiKey}`, // API key for authentication
     };
+
     // Make a POST request to the OpenAI API
     const response = await axios.post(endpoint, payload, {
         headers: headers,
         responseType: "stream",
     });
+    console.log(response.data);
 
     return response;
 }
+
+// retrieveTts("Hello")
 
 module.exports = retrieveTts;
