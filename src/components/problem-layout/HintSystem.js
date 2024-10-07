@@ -24,8 +24,10 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper'; 
 import { styled } from '@material-ui/core/styles';
 
-import io from 'socket.io-client';
-const socket = io('http://localhost:3000'); 
+// import io from 'socket.io-client';
+// const socket = io('http://localhost:3000'); 
+
+import AudioFetcher from '../../tts/AudioFetcher.js';
 
 const Item = styled(Paper)(({ theme, show_boarder }) => ({
 //   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -59,7 +61,7 @@ class HintSystem extends React.Component {
         this.giveStuFeedback = props.giveStuFeedback;
         this.unlockFirstHint = props.unlockFirstHint;
         this.isIncorrect = props.isIncorrect;
-        this.giveHintOnIncorrect = props.giveHintOnIncorrect
+        this.giveHintOnIncorrect = props.giveHintOnIncorrect;
 
         this.state = {
             latestStep: 0,
@@ -79,6 +81,8 @@ class HintSystem extends React.Component {
         if (this.giveHintOnIncorrect && this.isIncorrect && this.props.hintStatus.length > 0) {
             this.props.unlockHint(0, this.props.hints[0].type);
         } 
+
+        this.audioFetcher = new AudioFetcher();
     }
 
     unlockHint = (event, expanded, i) => {
@@ -210,28 +214,28 @@ class HintSystem extends React.Component {
     };
 
     playAgent = (hint) => {
-
         if( this.state.agentMode ){
             if (hint.pacedSpeech) {
                 this.setState({hintIndex: 0})
                 this.setState(() => ({playing: true}));
-                socket.emit('sendMessage', hint.pacedSpeech);   
+                this.audioFetcher.fetchAudio(hint.speech); // socket.emit('sendMessage', hint.pacedSpeech);   
             }; 
-        };               
-        socket.on('message', (data) => {
-            // console.log('Message from server:', data);
-            this.setState({hintIndex: parseInt(data)}); // later make function with some error handeling
-        });
+        };         
+        // TODO: switch highlighted expression       
+        // socket.on('message', (data) => {
+        //     // console.log('Message from server:', data);
+        //     this.setState({hintIndex: parseInt(data)}); // later make function with some error handeling
+        // });
 
-         // dont know if this should be placed here but it works
-         socket.on('finish', () => {
-            this.setState({playing: false});
-        });
+        //  // dont know if this should be placed here but it works
+        //  socket.on('finish', () => {
+        //     this.setState({playing: false});
+        // });
 
     };
 
     reloadSpeech = (hint) => {
-        socket.emit('reload');
+        // socket.emit('reload');
         this.setState(() => ({hintIndex: 0}), () => {
             this.playAgent(hint);
             // not fully working yet need to quit previous audio first
@@ -254,12 +258,13 @@ class HintSystem extends React.Component {
     };
 
     togglePlayPause = (event) => {
-        if (this.state.playing) {    // pause
-            socket.emit('pause'); 
-        }
-        else{  // play
-            socket.emit('play', this.state.hintIndex);
-        }
+        // if (this.state.playing) {    // pause
+        //     //socket.emit('pause'); 
+        // }
+        // else{  // play
+        //     socket.emit('play', this.state.hintIndex);
+        // }
+        this.AudioFetcher.playPause()
         this.setState((prevState) => ({playing: !prevState.playing}));
     };
 
@@ -270,9 +275,9 @@ class HintSystem extends React.Component {
         if (expanded){
             this.playAgent(hint);
         }
-        // else {
-        //     console.log("frontend: stopSpeach")
-        //     this.stopSpeech();
+        // TODO: Add speach is stopped if hint is closed
+        // else{
+        //     this.AudioFetcher.playPause();
         // }
        
     };
@@ -283,6 +288,7 @@ class HintSystem extends React.Component {
         const { classes, index, hints, problemID, seed, stepVars } = this.props;
         const { currentExpanded, showSubHints } = this.state;
         const { debug, use_expanded_view } = this.context;
+        
 
         return (
             <div className={classes.root}>

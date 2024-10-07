@@ -24,10 +24,8 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper'; 
 import { styled } from '@material-ui/core/styles';
 
-// import io from 'socket.io-client';
-// const socket = io('http://localhost:3000'); 
-
-import AudioFetcher from '../../tts/AudioFetcher.js';
+import io from 'socket.io-client';
+const socket = io('http://localhost:3000'); 
 
 const Item = styled(Paper)(({ theme, show_boarder }) => ({
 //   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -41,7 +39,7 @@ const Item = styled(Paper)(({ theme, show_boarder }) => ({
 }));
 // HELLO
 
-class HintSystemTTS extends React.Component {
+class HintSystem2 extends React.Component {
     static contextType = ThemeContext;
 
     constructor(props) {
@@ -61,7 +59,7 @@ class HintSystemTTS extends React.Component {
         this.giveStuFeedback = props.giveStuFeedback;
         this.unlockFirstHint = props.unlockFirstHint;
         this.isIncorrect = props.isIncorrect;
-        this.giveHintOnIncorrect = props.giveHintOnIncorrect;
+        this.giveHintOnIncorrect = props.giveHintOnIncorrect
 
         this.state = {
             latestStep: 0,
@@ -81,8 +79,6 @@ class HintSystemTTS extends React.Component {
         if (this.giveHintOnIncorrect && this.isIncorrect && this.props.hintStatus.length > 0) {
             this.props.unlockHint(0, this.props.hints[0].type);
         } 
-
-        this.audioFetcher = new AudioFetcher();
     }
 
     unlockHint = (event, expanded, i) => {
@@ -214,28 +210,28 @@ class HintSystemTTS extends React.Component {
     };
 
     playAgent = (hint) => {
+
         if( this.state.agentMode ){
             if (hint.pacedSpeech) {
                 this.setState({hintIndex: 0})
                 this.setState(() => ({playing: true}));
-                this.audioFetcher.fetchAudio(hint.speech); // socket.emit('sendMessage', hint.pacedSpeech);   
+                socket.emit('sendMessage', hint.pacedSpeech);   
             }; 
-        };         
-        // TODO: switch highlighted expression       
-        // socket.on('message', (data) => {
-        //     // console.log('Message from server:', data);
-        //     this.setState({hintIndex: parseInt(data)}); // later make function with some error handeling
-        // });
+        };               
+        socket.on('message', (data) => {
+            // console.log('Message from server:', data);
+            this.setState({hintIndex: parseInt(data)}); // later make function with some error handeling
+        });
 
-        //  // dont know if this should be placed here but it works
-        //  socket.on('finish', () => {
-        //     this.setState({playing: false});
-        // });
+         // dont know if this should be placed here but it works
+         socket.on('finish', () => {
+            this.setState({playing: false});
+        });
 
     };
 
     reloadSpeech = (hint) => {
-        // socket.emit('reload');
+        socket.emit('reload');
         this.setState(() => ({hintIndex: 0}), () => {
             this.playAgent(hint);
             // not fully working yet need to quit previous audio first
@@ -258,13 +254,12 @@ class HintSystemTTS extends React.Component {
     };
 
     togglePlayPause = (event) => {
-        // if (this.state.playing) {    // pause
-        //     //socket.emit('pause'); 
-        // }
-        // else{  // play
-        //     socket.emit('play', this.state.hintIndex);
-        // }
-        this.AudioFetcher.playPause()
+        if (this.state.playing) {    // pause
+            socket.emit('pause'); 
+        }
+        else{  // play
+            socket.emit('play', this.state.hintIndex);
+        }
         this.setState((prevState) => ({playing: !prevState.playing}));
     };
 
@@ -275,9 +270,9 @@ class HintSystemTTS extends React.Component {
         if (expanded){
             this.playAgent(hint);
         }
-        // TODO: Add speach is stopped if hint is closed
-        // else{
-        //     this.AudioFetcher.playPause();
+        // else {
+        //     console.log("frontend: stopSpeach")
+        //     this.stopSpeech();
         // }
        
     };
@@ -288,7 +283,6 @@ class HintSystemTTS extends React.Component {
         const { classes, index, hints, problemID, seed, stepVars } = this.props;
         const { currentExpanded, showSubHints } = this.state;
         const { debug, use_expanded_view } = this.context;
-        
 
         return (
             <div className={classes.root}>
@@ -456,4 +450,4 @@ const styles = (theme) => ({
     },
 });
 
-// export default withStyles(styles)(withTranslation(HintSystemTTS));
+export default withStyles(styles)(withTranslation(HintSystem));

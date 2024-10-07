@@ -22,6 +22,7 @@ async function retrieveTts(text) {
         headers: headers,
         responseType: "stream",
     });
+    console.log("Running TTS API call");
     console.log(response.data);
 
     return response;
