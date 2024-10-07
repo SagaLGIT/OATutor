@@ -218,7 +218,10 @@ class HintSystem extends React.Component {
             if (hint.pacedSpeech) {
                 this.setState({hintIndex: 0})
                 this.setState(() => ({playing: true}));
-                this.audioFetcher.fetchAudio(hint.speech); // socket.emit('sendMessage', hint.pacedSpeech);   
+                this.audioFetcher.fetchAudio(hint.speech).then(() => {
+                    this.audioFetcher.playPause();
+                });
+                
             }; 
         };         
         // TODO: switch highlighted expression       

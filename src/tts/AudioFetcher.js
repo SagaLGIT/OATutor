@@ -28,7 +28,7 @@ class AudioFetcher {
         // Make a POST request to the OpenAI API
         const response = await axios.post(endpoint, payload, {
             headers: headers,
-            responseType: "stream",
+            responseType: "blob",
         });
         console.log("Running TTS API call");
         console.log(response.data);
@@ -37,7 +37,7 @@ class AudioFetcher {
     }
 
     async fetchAudio(text) {
-        // debugger;
+        
         try {
             const response = await this.retrieveTts(text);
             const blob = new Blob([response.data], { type: 'audio/mpeg' });
@@ -56,6 +56,7 @@ class AudioFetcher {
     }
 
     playPause() {
+        // debugger;
         if (this.audio) {
             if (this.isPlaying) {
                 this.audio.pause();
