@@ -12,7 +12,7 @@ class AudioFetcher {
     async retrieveTts(text) {
         const inputVoice = "alloy"; // https://platform.openai.com/docs/guides/text-to-speech/voice-options
         const inputModel = "tts-1"; // https://platform.openai.com/docs/guides/text-to-speech/audio-quality
-        const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
+        const apiKey = null;
         const endpoint = "https://api.openai.com/v1/audio/speech";
     
         const payload = {
@@ -39,17 +39,21 @@ class AudioFetcher {
     async fetchAudio(text) {
         
         try {
+            // for (let index = 0; index < texts.length; index++){
             const response = await this.retrieveTts(text);
             const blob = new Blob([response.data], { type: 'audio/mpeg' });
             const url = URL.createObjectURL(blob);
             console.log("URL:", url);
-            console.log("Response:", response);
-
             this.audio = new Audio(url);
+            
+            // if last audio, add event listener to stop playing when audio ends
+            // if (index == text.length - 1) {
             this.audio.addEventListener('ended', () => {
                 this.isPlaying = false;
-            });
-            
+            })
+            // }
+            // this.audios.push(audio);
+            // }
         } catch (error) {
             console.error('Error fetching audio file:', error);
         }
@@ -66,6 +70,16 @@ class AudioFetcher {
             this.isPlaying = !this.isPlaying;
         }
     }
+    // playPause() {
+    //     if (audioRef.current) {
+    //         if (isPlaying) {
+    //             audioRef.current.pause();
+    //         } else {
+    //             audioRef.current.play();
+    //         }
+    //         setIsPlaying(!isPlaying);
+    //     }
+    // }
 }
 
 export default AudioFetcher;
@@ -73,6 +87,19 @@ export default AudioFetcher;
 
 // import axios  from 'axios'; // when using in react
 
+
+// playAll() {
+//     //NOT IN USE
+//     // if (this.audios.length > 0) {
+//     //     for (const audio in this.audios){
+//     if(this.audio){
+//             if (this.isPlaying) {
+//                 audio.pause();
+//             } else {
+//                 audio.play();
+//         }}
+//         this.isPlaying = !this.isPlaying;
+// }
 
 
 /* Paced version
