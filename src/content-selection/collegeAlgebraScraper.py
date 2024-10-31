@@ -2,8 +2,8 @@
 import os
 import json
 
-# Retrieve filepath of all files with DefaultPathway in content-pool directory
-output_file = 'src/content-selection/selectedContent.json'
+# Select only college algebra content
+output_file = 'src/content-selection/collegeAlgebraContent.json'
 in_file = 'src/content-sources/oatutor/coursePlans.json'
 
 
@@ -23,3 +23,5 @@ with open(output_file, 'w', encoding="utf-8") as outfile:
             json.dump(lessons, outfile, ensure_ascii=False, indent=4)
 
 print(f"Contents of {outfile} have been written to {output_file}.")
+
+
