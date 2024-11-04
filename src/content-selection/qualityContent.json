@@ -220,18 +220,17 @@
             "aabf119factor18a-h1"
         ],
         "title": "Factor the expression.",
-        "text": "What is the factoring of $$2p^2$$ $$\\left(+2\\right) p$$?",
+        "text": "What is the factoring of $$2p^2+2p$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
-        "speech": "What is the factoring of  2 p squared,  , parentheses positive 2  times p ?",
+        "speech": "What is the factoring of  2 p squared plus 2  times p ?",
         "math": [
-            "$$2p^2$$",
-            "$$\\left(+2\\right) p$$"
+            "$$2p^2+2p$$"
         ],
         "pacedSpeech": [
             "What is the factoring of   2 p squared, ",
-            "  ,  positive 2  times p"
+            "  ,  plus 2  times p"
         ]
     },
     {
@@ -1607,7 +1606,7 @@
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
         "speech": "What is the mathematical form of \"a monthly service fee of $34 plus $.05/min talk-time\"?",
         "math": [
-            " $$ $34 +  $.05/min $$"
+            " $$ \\$34 +  \\$.05/min $$"
         ],
         "pacedSpeech": [
             "What is the mathematical form of a monthly service fee of $34 plus $.05/min talk-time?"
@@ -1825,8 +1824,8 @@
         "speech": "If the average talk-time is , 420  minutes, the plan from company A will cost $55 every month and the plan from company B will cost  dollars 56.8  every month, so company A offers the better plan.",
         "math": [
             "$$420 minutes$$",
-            "$\\$55$$",
-            "$$\\$56.8$$"
+            "$\\$55 $$",
+            "$$\\$56.8 $$"
         ],
         "pacedSpeech": [
             "If the average talk-time is  , 420 ",
