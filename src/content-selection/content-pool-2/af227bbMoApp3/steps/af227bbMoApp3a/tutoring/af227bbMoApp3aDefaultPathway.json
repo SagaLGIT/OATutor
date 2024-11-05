@@ -75,7 +75,7 @@
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
         "speech": "What is the mathematical form of \"a monthly service fee of $34 plus $.05/min talk-time\"?",
         "math": [
-            " $$ $34 +  $.05/min $$"
+            " $$ \\$34 +  \\$.05/min $$"
         ],
         "pacedSpeech": [
             "What is the mathematical form of a monthly service fee of $34 plus $.05/min talk-time?"

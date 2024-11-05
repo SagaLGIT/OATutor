@@ -4,11 +4,11 @@
         "type": "hint",
         "dependencies": [],
         "title": "Addition",
-        "text": "Remember that $$f+g$$ is the same as $$\\left(f+g\\right) x$$. All we have to do is add the two functions.",
+        "text": "Remember that $$f+g$$ is the same as $$\\left(f+g\\right)(x)$$. All we have to do is add the two functions.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember that  f plus g  is the same as , parentheses f plus g,  times x . All we have to do is add the two functions.",
+        "speech": "Remember that  f plus g  is the same as , parentheses f plus g,  of x . All we have to do is add the two functions.",
         "math": [
             "$$f+g$$",
             "$$\\left(f+g\\right) x$$"

@@ -1817,15 +1817,15 @@
             "af227bbMoApp3d-h2"
         ],
         "title": "Comparison",
-        "text": "If the average talk-time is $$420 minutes$$, the plan from company A will cost $$\\$55$$ every month and the plan from company B will cost $$\\$56.8$$ every month, so company A offers the better plan.",
+        "text": "If the average talk-time is $$420$$ minutes, the plan from company A will cost $$\\$55$$ every month and the plan from company B will cost $$\\$56.8$$ every month, so company A offers the better plan.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
         "speech": "If the average talk-time is , 420  minutes, the plan from company A will cost $55 every month and the plan from company B will cost  dollars 56.8  every month, so company A offers the better plan.",
         "math": [
-            "$$420 minutes$$",
-            "$\\$55 $$",
-            "$$\\$56.8 $$"
+            "$$420$$",
+            "$$ \\$55 $$",
+            "$$ \\$56.8 $$"
         ],
         "pacedSpeech": [
             "If the average talk-time is  , 420 ",
@@ -3363,18 +3363,18 @@
         "type": "hint",
         "dependencies": [],
         "title": "Addition",
-        "text": "Remember that $$f+g$$ is the same as $$\\left(f+g\\right) x$$. All we have to do is add the two functions.",
+        "text": "Remember that $$f+g$$ is the same as $$\\left(f+g\\right)(x)$$. All we have to do is add the two functions.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember that  f plus g  is the same as , parentheses f plus g,  times x . All we have to do is add the two functions.",
+        "speech": "Remember that  f plus g  is the same as , parentheses f plus g,  of x . All we have to do is add the two functions.",
         "math": [
             "$$f+g$$",
-            "$$\\left(f+g\\right) x$$"
+            "$$\\left(f+g\\right)(x)$$"
         ],
         "pacedSpeech": [
             "Remember that   f plus g ",
-            " is the same as  ,  f plus g,  times x ",
+            " is the same as  ,  f plus g,  of x ",
             ". All we have to do is add the two functions."
         ]
     },
@@ -3423,12 +3423,12 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember that f-g is the same as  times, parentheses f minus g,  times x . All we have to do is subtract the two functions.",
+        "speech": "Remember that f-g is the same as  times, parentheses f minus g,  of x . All we have to do is subtract the two functions.",
         "math": [
             "$$(f-g)(x)$$"
         ],
         "pacedSpeech": [
-            "Remember that f-g is the same as   times,  f minus g,  times x ",
+            "Remember that f-g is the same as   times,  f minus g,  of x ",
             ". All we have to do is subtract the two functions."
         ]
     },
@@ -3477,14 +3477,14 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember that fg is the same as f g times x. All we have to do is use foil to multiply the two functions.",
+        "speech": "Remember that fg is the same as f g of x. All we have to do is use foil to multiply the two functions.",
         "math": [
             " $$fg$$",
             "$$(fg)(x)$$"
         ],
         "pacedSpeech": [
             "Remember that fg",
-             "is the same as f g times x,",
+             "is the same as f g of x,",
               "All we have to do is use foil to multiply the two functions."
         ]
     },
@@ -3536,18 +3536,18 @@
         "type": "hint",
         "dependencies": [],
         "title": "Division",
-        "text": "Remember that $$\\frac{f}{g}$$ is the same as $$\\frac{f}{g} x$$. All we have to do divide the two functions.",
+        "text": "Remember that $$\\frac{f}{g}$$ is the same as $$\\frac{f}{g}(x)$$. All we have to do divide the two functions.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember that , f over g,  is the same as  f over g, x . All we have to do divide the two functions.",
+        "speech": "Remember that , f over g,  is the same as  f over g, of x . All we have to do divide the two functions.",
         "math": [
             "$$\\frac{f}{g}$$",
             "$$\\frac{f}{g} x$$"
         ],
         "pacedSpeech": [
             "Remember that  , f over g, ",
-            " is the same as   f over g, x ",
+            " is the same as   f over g, of x ",
             ". All we have to do divide the two functions."
         ]
     },
@@ -3575,18 +3575,18 @@
         "type": "hint",
         "dependencies": [],
         "title": "Addition",
-        "text": "Remember that $$f+g$$ is the same as $$\\left(f+g\\right) x$$. All we have to do is add the two functions.",
+        "text": "Remember that $$f+g$$ is the same as $$\\left(f+g\\right)(x)$$. All we have to do is add the two functions.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember that  f plus g  is the same as , parentheses f plus g,  times x . All we have to do is add the two functions.",
+        "speech": "Remember that  f plus g  is the same as , parentheses f plus g,  of x . All we have to do is add the two functions.",
         "math": [
             "$$f+g$$",
-            "$$\\left(f+g\\right) x$$"
+            "$$\\left(f+g\\right)(x)$$"
         ],
         "pacedSpeech": [
             "Remember that   f plus g ",
-            " is the same as  ,  f plus g,  times x ",
+            " is the same as  ,  f plus g,  of x ",
             ". All we have to do is add the two functions."
         ]
     },
@@ -3709,18 +3709,18 @@
         "type": "hint",
         "dependencies": [],
         "title": "Division",
-        "text": "Remember that $$\\frac{f}{g}$$ is the same as $$\\frac{f}{g} x$$. All we have to do is divide the two functions.",
+        "text": "Remember that $$\\frac{f}{g}$$ is the same as $$\\frac{f}{g}(x)$$. All we have to do is divide the two functions.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember that , f over g,  is the same as  f over g, x . All we have to do is divide the two functions.",
+        "speech": "Remember that , f over g,  is the same as  f over g, of x . All we have to do is divide the two functions.",
         "math": [
             "$$\\frac{f}{g}$$",
-            "$$\\frac{f}{g} x$$"
+            "$$\\frac{f}{g}(x)$$"
         ],
         "pacedSpeech": [
             "Remember that  , f over g, ",
-            " is the same as   f over g, x ",
+            " is the same as   f over g, of x ",
             ". All we have to do is divide the two functions."
         ]
     },
@@ -3748,18 +3748,18 @@
         "type": "hint",
         "dependencies": [],
         "title": "Addition",
-        "text": "Remember that $$f+g$$ is the same as $$\\left(f+g\\right) x$$. All we have to do is add the two functions.",
+        "text": "Remember that $$f+g$$ is the same as $$\\left(f+g\\right)(x)$$. All we have to do is add the two functions.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember that f plus g  is the same as , parentheses f plus g,  times x . All we have to do is add the two functions.",
+        "speech": "Remember that f plus g  is the same as , parentheses f plus g,  of x . All we have to do is add the two functions.",
         "math": [
             "$$f+g$$",
-            "$$\\left(f+g\\right) x$$"
+            "$$\\left(f+g\\right)(x)$$"
         ],
         "pacedSpeech": [
             "Remember that  f plus g ",
-            " is the same as  ,  f plus g,  times x ",
+            " is the same as  ,  f plus g,  of x ",
             ". All we have to do is add the two functions."
         ]
     },
@@ -3858,16 +3858,16 @@
         "type": "hint",
         "dependencies": [],
         "title": "Multiplication",
-        "text": "Remember that fg is the same as $$f g x$$. All we have to do is use foil to multiply the two functions.",
+        "text": "Remember that fg is the same as $$(fg)(x)$$. All we have to do is use foil to multiply the two functions.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember that fg is the same as  f g x, . All we have to do is use foil to multiply the two functions.",
+        "speech": "Remember that fg is the same as  f times g  ofx, . All we have to do is use foil to multiply the two functions.",
         "math": [
-            "$$f g x$$"
+            "$$(fg)(x)$$"
         ],
         "pacedSpeech": [
-            "Remember that fg is the same as   f g x, ",
+            "Remember that fg is the same as   f times g  of x, ",
             ". All we have to do is use foil to multiply the two functions."
         ]
     },
@@ -3919,18 +3919,18 @@
         "type": "hint",
         "dependencies": [],
         "title": "Division",
-        "text": "Remember that $$\\frac{f}{g}$$ is the same as $$\\frac{f}{g} x$$. All we have to do is divide the two functions.",
+        "text": "Remember that $$\\frac{f}{g}$$ is the same as $$\\frac{f}{g}(x)$$. All we have to do is divide the two functions.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember that , f over g,  is the same as  f over g, x . All we have to do is divide the two functions.",
+        "speech": "Remember that , f over g,  is the same as  f over g, of x . All we have to do is divide the two functions.",
         "math": [
             "$$\\frac{f}{g}$$",
-            "$$\\frac{f}{g} x$$"
+            "$$\\frac{f}{g}(x)$$"
         ],
         "pacedSpeech": [
             "Remember that  , f over g, ",
-            " is the same as   f over g, x ",
+            " is the same as   f over g, of  x ",
             ". All we have to do is divide the two functions."
         ]
     },
@@ -4001,18 +4001,18 @@
         "type": "hint",
         "dependencies": [],
         "title": "Addition",
-        "text": "Remember that $$f+g$$ is the same as $$\\left(f+g\\right) x$$. All we have to do is add the two functions.",
+        "text": "Remember that $$f+g$$ is the same as $$\\left(f+g\\right)(x)$$. All we have to do is add the two functions.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember that  f plus g  is the same as , parentheses f plus g,  times x . All we have to do is add the two functions.",
+        "speech": "Remember that  f plus g  is the same as , parentheses f plus g,  of x . All we have to do is add the two functions.",
         "math": [
             "$$f+g$$",
-            "$$\\left(f+g\\right) x$$"
+            "$$\\left(f+g\\right)(x)$$"
         ],
         "pacedSpeech": [
             "Remember that   f plus g ",
-            " is the same as  ,  f plus g,  times x ",
+            " is the same as  ,  f plus g,  of x ",
             ". All we have to do is add the two functions."
         ]
     },
@@ -4091,12 +4091,12 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember that f-g is the same as  times, parentheses f minus g,  times x . All we have to do is subtract the two functions.",
+        "speech": "Remember that f-g is the same as  times, parentheses f minus g,  of x . All we have to do is subtract the two functions.",
         "math": [
             "$$(f-g)(x)$$"
         ],
         "pacedSpeech": [
-            "Remember that f-g is the same as   times,  f minus g,  times x ",
+            "Remember that f-g is the same as   times,  f minus g,  of x ",
             ". All we have to do is subtract the two functions."
         ]
     },
@@ -4153,17 +4153,17 @@
         "type": "hint",
         "dependencies": [],
         "title": "Multiplication",
-        "text": "Remember that $$fg$$ is the same as $$f g x$$. All we have to do is use foil to multiply the two functions.",
+        "text": "Remember that $$fg$$ is the same as $$(fg)(x)$$. All we have to do is use foil to multiply the two functions.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember that fg is the same as  f g x, . All we have to do is use foil to multiply the two functions.",
+        "speech": "Remember that fg is the same as  f timges g of x, . All we have to do is use foil to multiply the two functions.",
         "math": [
             "$$fg$$",
-            "$$f g x$$"
+            "$$(fg)(x)$$"
         ],
         "pacedSpeech": [
-            "Remember that fg is the same as   f g x, ",
+            "Remember that fg is the same as   f times g of x, ",
             ". All we have to do is use foil to multiply the two functions."
         ]
     },
@@ -4195,18 +4195,18 @@
         "type": "hint",
         "dependencies": [],
         "title": "Division",
-        "text": "Remember that $$\\frac{f}{g}$$ is the same as $$\\frac{f}{g} x$$. All we have to do is divide the two functions.",
+        "text": "Remember that $$\\frac{f}{g}$$ is the same as $$\\frac{f}{g}(x)$$. All we have to do is divide the two functions.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember that , f over g,  is the same as  f over g, x . All we have to do is divide the two functions.",
+        "speech": "Remember that , f over g,  is the same as  f over g, of x . All we have to do is divide the two functions.",
         "math": [
             "$$\\frac{f}{g}$$",
-            "$$\\frac{f}{g} x$$"
+            "$$\\frac{f}{g}(x)$$"
         ],
         "pacedSpeech": [
             "Remember that  , f over g, ",
-            " is the same as   f over g, x ",
+            " is the same as   f over g, of x ",
             ". All we have to do is divide the two functions."
         ]
     },
@@ -4261,18 +4261,18 @@
         "type": "hint",
         "dependencies": [],
         "title": "Addition",
-        "text": "Remember that $$f+g$$ is the same as $$\\left(f+g\\right) x$$. All we have to do is add the two functions.",
+        "text": "Remember that $$f+g$$ is the same as $$\\left(f+g\\right)(x)$$. All we have to do is add the two functions.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember that  f plus g  is the same as , parentheses f plus g,  times x . All we have to do is add the two functions.",
+        "speech": "Remember that  f plus g  is the same as , parentheses f plus g,  of x . All we have to do is add the two functions.",
         "math": [
             "$$f+g$$",
-            "$$\\left(f+g\\right) x$$"
+            "$$\\left(f+g\\right)(x)$$"
         ],
         "pacedSpeech": [
             "Remember that   f plus g ",
-            " is the same as  ,  f plus g,  times x ",
+            " is the same as  ,  f plus g,  of x ",
             ". All we have to do is add the two functions."
         ]
     },
@@ -4304,14 +4304,14 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember that f minus g is the same as  times, parentheses f minus g,  times x . All we have to do is add the two functions.",
+        "speech": "Remember that f minus g is the same as  times, parentheses f minus g,  of x . All we have to do is add the two functions.",
         "math": [
             "$$f-g$$",
             "$$(f-g)(x)$$"
         ],
         "pacedSpeech": [
             "Remember that f minus g",
-            "is the same as   times,  f minus g,  times x ",
+            "is the same as   times,  f minus g,  of x ",
             ". All we have to do is add the two functions."
         ]
     },
@@ -4339,18 +4339,18 @@
         "type": "hint",
         "dependencies": [],
         "title": "Multiplication",
-        "text": "Remember that $$fg$$ is the same as $$f g x$$. All we have to do is use foil to multiply the two functions.",
+        "text": "Remember that $$fg$$ is the same as $$(fg)(x)$$. All we have to do is use foil to multiply the two functions.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember that fg is the same as  f g x . All we have to do is use foil to multiply the two functions.",
+        "speech": "Remember that fg is the same as  f g of x . All we have to do is use foil to multiply the two functions.",
         "math": [
             "$$fg$$",
-            "$$f g x$$"
+            "$$(fg)(x)$$"
         ],
         "pacedSpeech": [
             "Remember that fg",
-            "is the same as   f g x ",
+            "is the same as   f g of x ",
             ". All we have to do is use foil to multiply the two functions."
         ]
     },
@@ -4378,14 +4378,14 @@
         "type": "hint",
         "dependencies": [],
         "title": "Division",
-        "text": "Remember that $$\\frac{f}{g}$$ is the same as $$\\frac{f}{g} x$$. All we have to do is divide the two functions.",
+        "text": "Remember that $$\\frac{f}{g}$$ is the same as $$\\frac{f}{g}(x)$$. All we have to do is divide the two functions.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember that , f over g,  is the same as  f over g, x . All we have to do is divide the two functions.",
+        "speech": "Remember that , f over g,  is the same as  f over g, of x . All we have to do is divide the two functions.",
         "math": [
             "$$\\frac{f}{g}$$",
-            "$$\\frac{f}{g} x$$"
+            "$$\\frac{f}{g}(x)$$"
         ],
         "pacedSpeech": [
             "Remember that  , f over g, ",
@@ -4462,18 +4462,18 @@
         "type": "hint",
         "dependencies": [],
         "title": "Division",
-        "text": "Remember that $$\\frac{g}{f}$$ is the same as $$\\frac{g}{f} x$$. All we have to do is divide the two functions.",
+        "text": "Remember that $$\\frac{g}{f}$$ is the same as $$\\frac{g}{f}(x)$$. All we have to do is divide the two functions.",
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember that , g over f,  is the same as  g over f, x . All we have to do is divide the two functions.",
+        "speech": "Remember that , g over f,  is the same as  g over f, of x . All we have to do is divide the two functions.",
         "math": [
             "$$\\frac{g}{f}$$",
-            "$$\\frac{g}{f} x$$"
+            "$$\\frac{g}{f}(x)$$"
         ],
         "pacedSpeech": [
             "Remember that  , g over f, ",
-            " is the same as   g over f, x ",
+            " is the same as   g over f, of x ",
             ". All we have to do is divide the two functions."
         ]
     },
@@ -6351,7 +6351,7 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "We can set the equation equal to  0 .  0, is equal to parentheses x plus 2,  times, parentheses x minus 2,  times, parentheses, 2 x minus 1,  . This means that  x is equal to, negative 2 ,  2 , and  1 half . So, our x-intercepts are F$",
+        "speech": "We can set the equation equal to  0 .  0, is equal to parentheses x plus 2,  times, parentheses x minus 2,  times, parentheses, 2 x minus 1,  . This means that  x is equal to, negative 2 ,  2 , and  1 half . So, our x-intercepts are parentheses negative 2 comma 0 comma, parentheses  2 comma 0, comma; parentheses fraction 1 2, comma 0",
         "math": [
             "$$0$$",
             "$$0=\\left(x+2\\right) \\left(x-2\\right) \\left(2x-1\\right)$$",

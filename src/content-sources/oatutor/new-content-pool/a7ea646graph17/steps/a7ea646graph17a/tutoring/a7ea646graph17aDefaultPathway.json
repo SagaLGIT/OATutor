@@ -88,7 +88,7 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "We can set the equation equal to  0 .  0, is equal to parentheses x plus 2,  times, parentheses x minus 2,  times, parentheses, 2 x minus 1,  . This means that  x is equal to, negative 2 ,  2 , and  1 half . So, our x-intercepts are F$",
+        "speech": "We can set the equation equal to  0 .  0, is equal to parentheses x plus 2,  times, parentheses x minus 2,  times, parentheses, 2 x minus 1,  . This means that  x is equal to, negative 2 ,  2 , and  1 half . So, our x-intercepts are parentheses negative 2 comma 0 comma, parentheses  2 comma 0, comma; parentheses fraction 1 2, comma 0",
         "math": [
             "$$0$$",
             "$$0=\\left(x+2\\right) \\left(x-2\\right) \\left(2x-1\\right)$$",

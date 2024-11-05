@@ -8,14 +8,14 @@
         "variabilization": {},
         "oer": "https://OATutor.io <OATutor>",
         "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-        "speech": "Remember that fg is the same as f g times x. All we have to do is use foil to multiply the two functions.",
+        "speech": "Remember that fg is the same as f g of x. All we have to do is use foil to multiply the two functions.",
         "math": [
             " $$fg$$",
             "$$(fg)(x)$$"
         ],
         "pacedSpeech": [
             "Remember that fg",
-            "is the same as f g times x,",
+            "is the same as f g of x,",
             "All we have to do is use foil to multiply the two functions."
         ]
     },
