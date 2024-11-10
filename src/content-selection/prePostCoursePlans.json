@@ -1,0 +1,412 @@
+{
+    "courseName": "OpenStax: College Algebra",
+    "courseOER": "https://openstax.org/details/books/college-algebra-2e <OpenStax: College Algebra>",
+    "courseLicense": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
+    "lessons": [
+        {
+            "id": "67l3G5S9-ExT1-h3NZwjtiGA",
+            "name": "Lesson 1.5",
+            "topics": "Factoring Polynomials",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "factoring_by_grouping": 0.85
+            },
+            "giveStuFeedback": true,
+            "giveStuHints": true,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "4NrTs4At-CGhE-d1mz1Lyacz",
+            "name": "Lesson 2.3",
+            "topics": "Models and Applications",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "setting_up_a_linear_equation_to_solve_a_real_world_application": 0.85
+            },
+            "giveStuFeedback": true,
+            "giveStuHints": true,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "5cmrijlR-qta2-5QPBarJe6X",
+            "name": "Lesson 3.4",
+            "topics": "Composition of Functions",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "combining_functions_using_algebraic_operations": 0.85
+            },
+            "giveStuFeedback": true,
+            "giveStuHints": true,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "7HvOenA8-vBo7-a4Jgeuu78b",
+            "name": "Lesson 4.1",
+            "topics": "Linear Functions",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "decreasing": 0.85
+            },
+            "giveStuFeedback": true,
+            "giveStuHints": true,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "7Tn3BPUQ-pCqN-NvpeWpaOv9",
+            "name": "Lesson 5.3",
+            "topics": "Graphs of Polynomial Functions",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "using_factoring_to_find_zeros_of_polynomial_functions": 0.85
+            },
+            "giveStuFeedback": true,
+            "giveStuHints": true,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "4ERr1AbS-7liT-9mqMX6WkWp",
+            "name": "Lesson 6.8",
+            "topics": "Fitting Exponential Models to Data",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "building_a_logistic_model_from_data": 0.85
+            },
+            "giveStuFeedback": true,
+            "giveStuHints": true,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "3aMZNfMb-negJ-8QWkColcJN",
+            "name": "Lesson 7.1",
+            "topics": "Systems of Linear Equations: Two Variables",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "solving_systems_of_equations_by_substitution": 0.85
+            },
+            "giveStuFeedback": true,
+            "giveStuHints": true,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "3aMZNfMb-negJ-8QWkColcJN",
+            "name": "Lesson 7.1",
+            "topics": "Systems of Linear Equations: Two Variables",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "solving_systems_of_equations_by_substitution": 0.85
+            },
+            "giveStuFeedback": true,
+            "giveStuHints": true,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "59N3CNUf-f2Gq-fTFKLCrwoi",
+            "name": "Lesson 8.3",
+            "topics": "The Parabola",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "writing_equations_of_parabolas_in_standard_form": 0.85
+            },
+            "giveStuFeedback": true,
+            "giveStuHints": true,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "PRE-67l3G5S9-ExT1-h3NZwjtiGA",
+            "name": "Lesson 1.5",
+            "topics": "Pre-test: Factoring Polynomials",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "factoring_by_grouping_pre": 0.85
+            },
+            "giveStuFeedback": false,
+            "giveStuHints": false,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "PRE-4NrTs4At-CGhE-d1mz1Lyacz",
+            "name": "Lesson 2.3",
+            "topics": "Pre-test: Models and Applications",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "setting_up_a_linear_equation_to_solve_a_real_world_application_pre": 0.85
+            },
+            "giveStuFeedback": false,
+            "giveStuHints": false,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "PRE-5cmrijlR-qta2-5QPBarJe6X",
+            "name": "Lesson 3.4",
+            "topics": "Pre-test: Composition of Functions",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "combining_functions_using_algebraic_operations_pre": 0.85
+            },
+            "giveStuFeedback": false,
+            "giveStuHints": false,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "PRE-7HvOenA8-vBo7-a4Jgeuu78b",
+            "name": "Lesson 4.1",
+            "topics": "Pre-test: Linear Functions",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "decreasing_pre": 0.85
+            },
+            "giveStuFeedback": false,
+            "giveStuHints": false,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "PRE-7Tn3BPUQ-pCqN-NvpeWpaOv9",
+            "name": "Lesson 5.3",
+            "topics": "Pre-test: Graphs of Polynomial Functions",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "using_factoring_to_find_zeros_of_polynomial_functions_pre": 0.85
+            },
+            "giveStuFeedback": false,
+            "giveStuHints": false,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "PRE-4ERr1AbS-7liT-9mqMX6WkWp",
+            "name": "Lesson 6.8",
+            "topics": "Pre-test: Fitting Exponential Models to Data",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "building_a_logistic_model_from_data_pre": 0.85
+            },
+            "giveStuFeedback": false,
+            "giveStuHints": false,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "PRE-3aMZNfMb-negJ-8QWkColcJN",
+            "name": "Lesson 7.1",
+            "topics": "Pre-test: Systems of Linear Equations: Two Variables",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "solving_systems_of_equations_by_substitution_pre": 0.85
+            },
+            "giveStuFeedback": false,
+            "giveStuHints": false,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "PRE-3aMZNfMb-negJ-8QWkColcJN",
+            "name": "Lesson 7.1",
+            "topics": "Pre-test: Systems of Linear Equations: Two Variables",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "solving_systems_of_equations_by_substitution_pre": 0.85
+            },
+            "giveStuFeedback": false,
+            "giveStuHints": false,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "PRE-59N3CNUf-f2Gq-fTFKLCrwoi",
+            "name": "Lesson 8.3",
+            "topics": "Pre-test: The Parabola",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "writing_equations_of_parabolas_in_standard_form_pre": 0.85
+            },
+            "giveStuFeedback": false,
+            "giveStuHints": false,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "POST-67l3G5S9-ExT1-h3NZwjtiGA",
+            "name": "Lesson 1.5",
+            "topics": "Post-test: Factoring Polynomials",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "factoring_by_grouping_post": 0.85
+            },
+            "giveStuFeedback": false,
+            "giveStuHints": false,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "POST-4NrTs4At-CGhE-d1mz1Lyacz",
+            "name": "Lesson 2.3",
+            "topics": "Post-test: Models and Applications",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "setting_up_a_linear_equation_to_solve_a_real_world_application_post": 0.85
+            },
+            "giveStuFeedback": false,
+            "giveStuHints": false,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "POST-5cmrijlR-qta2-5QPBarJe6X",
+            "name": "Lesson 3.4",
+            "topics": "Post-test: Composition of Functions",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "combining_functions_using_algebraic_operations_post": 0.85
+            },
+            "giveStuFeedback": false,
+            "giveStuHints": false,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "POST-7HvOenA8-vBo7-a4Jgeuu78b",
+            "name": "Lesson 4.1",
+            "topics": "Post-test: Linear Functions",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "decreasing_post": 0.85
+            },
+            "giveStuFeedback": false,
+            "giveStuHints": false,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "POST-7Tn3BPUQ-pCqN-NvpeWpaOv9",
+            "name": "Lesson 5.3",
+            "topics": "Post-test: Graphs of Polynomial Functions",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "using_factoring_to_find_zeros_of_polynomial_functions_post": 0.85
+            },
+            "giveStuFeedback": false,
+            "giveStuHints": false,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "POST-4ERr1AbS-7liT-9mqMX6WkWp",
+            "name": "Lesson 6.8",
+            "topics": "Post-test: Fitting Exponential Models to Data",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "building_a_logistic_model_from_data_post": 0.85
+            },
+            "giveStuFeedback": false,
+            "giveStuHints": false,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "POST-3aMZNfMb-negJ-8QWkColcJN",
+            "name": "Lesson 7.1",
+            "topics": "Post-test: Systems of Linear Equations: Two Variables",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "solving_systems_of_equations_by_substitution_post": 0.85
+            },
+            "giveStuFeedback": false,
+            "giveStuHints": false,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "POST-3aMZNfMb-negJ-8QWkColcJN",
+            "name": "Lesson 7.1",
+            "topics": "Post-test: Systems of Linear Equations: Two Variables",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "solving_systems_of_equations_by_substitution_post": 0.85
+            },
+            "giveStuFeedback": false,
+            "giveStuHints": false,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        },
+        {
+            "id": "POST-59N3CNUf-f2Gq-fTFKLCrwoi",
+            "name": "Lesson 8.3",
+            "topics": "Post-test: The Parabola",
+            "allowRecycle": false,
+            "learningObjectives": {
+                "writing_equations_of_parabolas_in_standard_form_post": 0.85
+            },
+            "giveStuFeedback": false,
+            "giveStuHints": false,
+            "doMasteryUpdate": false,
+            "showStuMastery": false,
+            "unlockFirstHint": false,
+            "giveHintOnIncorrect": false
+        }
+    ]
+}
