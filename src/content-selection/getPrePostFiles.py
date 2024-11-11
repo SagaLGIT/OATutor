@@ -14,7 +14,6 @@ post_output_pool = os.path.abspath('src/content-selection/content-pool-post')
 def get_filepaths(IDs, output_pool):
     # only unique IDs (not division1a and division1b only division1 eg)
     folder_IDs = list(set([ID[:-1] for ID in IDs]))
-    print(folder_IDs)
 
     # generate all ID filepaths    
     filepaths = []
@@ -38,11 +37,9 @@ def write_train(filepaths):
     print(f"Train files have been written to {train_output_pool}.")
     
 
-def write_test(filepaths, test_type):
+def write_test(filepaths, test_type, output_path):
     # Test type: "PRE-" or "POST-"
     copy_filetree(filepaths)
-
-    _, output_path = filepaths[0]
 
     # go through all files in output_path and change nameing 
     for root, dirs, files in os.walk(output_path):
@@ -54,6 +51,32 @@ def write_test(filepaths, test_type):
             os.rename(old_filepath, new_filepath)
             print(f"Renamed {old_filepath} to {new_filepath}")
 
+            # for each file also rename the ID to the filename
+            with open(new_filepath, 'r+', encoding='utf-8') as file:
+                data = json.load(file)
+                
+                if isinstance(data, list):
+                    for item in data:
+                        item['id'] = test_type + item['id']
+                else:
+                    data['id'] = test_type + data['id']
+
+                # data['id'] = test_type + data['id']
+                file.seek(0)
+                json.dump(data, file, ensure_ascii=False, indent=4)
+                file.truncate()
+
+
+    for root, dirs, files in os.walk(output_path):
+        for dir_name in dirs:
+            # change all directory names to include test_type (eg PRE-<dir_name>)
+            old_dirpath = os.path.join(root, dir_name)
+            new_dirname = f"{test_type}{dir_name}"
+            new_dirpath = os.path.join(root, new_dirname)
+            os.rename(old_dirpath, new_dirpath)
+            print(f"Renamed directory {old_dirpath} to {new_dirpath}")
+            
+    print(f"Test files of type {test_type} have been written to {train_output_pool}.")
 
 
 # train 
@@ -68,10 +91,10 @@ with open('src/content-selection/testIDs.txt', 'r',  encoding="utf-8") as ID_fil
     test_IDs = ID_file.read().splitlines()
 
 # PRE
-write_test(get_filepaths(test_IDs, pre_output_pool), "PRE-")
+write_test(get_filepaths(test_IDs, pre_output_pool), "PRE-", pre_output_pool)
 
 # POST
-write_test(get_filepaths(test_IDs, post_output_pool), "POST-")
+write_test(get_filepaths(test_IDs, post_output_pool), "POST-", post_output_pool)
 
 
 
@@ -88,7 +111,3 @@ write_test(get_filepaths(test_IDs, post_output_pool), "POST-")
     # gather contents from IDs
     # write to separet directory (eg PRE dir)
     #change all this nameing in this directory to ge PRE-<filename> and subquestions PPR-<filename>a, PPR-<filename>b etc
-
-
-
-print(f"Contents have been written to {output_path}.")
