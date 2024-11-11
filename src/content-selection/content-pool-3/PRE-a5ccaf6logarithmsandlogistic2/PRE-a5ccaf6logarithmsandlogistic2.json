@@ -1,5 +1,5 @@
 {
-    "id": "a5ccaf6logarithmsandlogistic2",
+    "id": "PRE-a5ccaf6logarithmsandlogistic2",
     "title": "Solving Logistic Equations #1",
     "body": "A logistic model is given by the equation $$P(t)=\\frac{90}{1+5e^{-0.42 t}}$$.",
     "variabilization": {},
