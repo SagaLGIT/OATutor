@@ -93,6 +93,10 @@ class ProblemCard extends React.Component {
             this.giveStuBottomHint &&
             !(context.debug && context["use_expanded_view"])
         ) {
+            // if agentMode
+                // use new attribute stepAnswerSpeech instead
+                // needs to be converted to mp3 and played with HintVoiceBoard component
+            
             // Bottom out hints
             this.hints.push({
                 id: this.step.id + "-h" + (this.hints.length + 1),
@@ -569,6 +573,7 @@ class ProblemCard extends React.Component {
                                         lesson={this.props.lesson}
                                         courseName={this.props.courseName}
                                         isIncorrect={this.expandFirstIncorrect}
+                                        // agentMode={this.agentMode} // Xiaowen sends
                                     />
                                 </ErrorBoundary>
                                 <Spacer />

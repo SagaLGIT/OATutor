@@ -4,16 +4,20 @@
         "type": "hint",
         "dependencies": [],
         "title": "Split the expression",
-        "text": "Split 9a to 12a and -3a.",
+        "text": "Split $$9a$$ to $$12a$$ and $$-3a$$.",
         "variabilization": {},
         "oer": "",
         "license": "",
         "speech": "Split 9a to 12a and -3a.",
         "math": [
-            ""
+            "$$9a$$",
+            "$$12a$$",
+            "$$-3a$$"
         ],
         "pacedSpeech": [
-            "Split 9a to 12a and -3a."
+            "Split 9a",
+            " to 12a",
+            " and minus 3a."
         ]
     },
     {
@@ -54,16 +58,16 @@
             "aabf119factor16a-h2"
         ],
         "title": "Factor the expression",
-        "text": "What is the factoring of -3a - 18?",
+        "text": "What is the factoring of $$-3a - 18$$?",
         "variabilization": {},
         "oer": "",
         "license": "",
-        "speech": "What is the factoring of -3a - 18?",
+        "speech": "What is the factoring of minus 3a minus 18?",
         "math": [
-            ""
+            "$$-3a - 18$$"
         ],
         "pacedSpeech": [
-            "What is the factoring of -3a - 18?"
+            "What is the factoring of minus 3a minus 18?"
         ]
     },
     {
